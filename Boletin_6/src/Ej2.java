@@ -1,6 +1,6 @@
 public class Ej2 {
     public static void main(String[] args) {
-eco(5);
+eco(6;
     }
     public static void eco(int n){
         if (n>0){
