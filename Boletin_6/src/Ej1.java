@@ -12,7 +12,7 @@ public class Ej1 {
     }
     public static int comprendidos(int a, int b){
         for (int i=1;a!=b;a--){
-            System.out.println(a);
+            System.out.println(a); //a
         }
     return a;
     }
