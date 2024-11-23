@@ -7,9 +7,8 @@ public class Dani {
 
     public static void sayAge1() {
         System.out.println("Im 27 years old1");
-    }
-asadasdasd
 
-}
+
+    } //hola
 
 
