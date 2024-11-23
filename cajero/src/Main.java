@@ -3,7 +3,7 @@ public class Main {
     sayName();
     sayAge();
     Dani.sayName1();
-    Dani.sayAg1e();
+    Dani.sayAge1();
     }
 
     public static void sayName(){
