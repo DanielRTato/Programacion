@@ -11,7 +11,7 @@ public class Ej7 {
         int[] clon = copia(original);
         System.out.println("El clon es: " + Arrays.toString(clon));
         for (int i=0; i<clon.length; i++){
-            System.out.println(clon[i]);
+            System.out.println(clon[i]);  //mostra el array sin importal util.array
         }
     }
 
