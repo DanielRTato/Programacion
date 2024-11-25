@@ -4,7 +4,7 @@ public class Ej7 {
     public static void main(String[] args) {
         //Codificar unha función que faga unha copia
         // dunha matríz pasado por parámetro e devolte
-        // a copia do matríz.
+        // a copia do matríz
 
         int[] original = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         System.out.println("La lista original es"+ Arrays.toString(original));
