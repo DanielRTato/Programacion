@@ -1,5 +1,8 @@
 import java.util.Arrays;
 
+/**
+ *
+ */
 public class sinRepetidos {
     public static void main(String[] args) {
         int[] repetidos = {1, 9,2, 3, 4, 5,9,6, 6, 7, 8, 9, 1, 2, 3};
