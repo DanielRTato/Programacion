@@ -2,18 +2,19 @@ import java.util.Arrays;
 
 public class sinRepetidos {
     public static void main(String[] args) {
-        int[] repetidos = {1, 9,2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3};
-        int[] temporal = new int[1];
+        int[] repetidos = {1, 9,2, 3, 4, 5,9,6, 6, 7, 8, 9, 1, 2, 3};
+        int[] sinRepetidos = new int[1];
         for (int elemento : repetidos) {
-            if (Ej5.buscarValor(temporal, elemento) == -1) {
-                int[] novo = new int[temporal.length + 1];
-                for (int i = 0; i < temporal.length; i++) {
-                    novo[i] = temporal[i];
+            if (Ej5.buscarValor(sinRepetidos, elemento) == -1) {
+                                int[] novo = new int[sinRepetidos.length + 1];
+                for (int i = 0; i < sinRepetidos.length; i++) {
+                    novo[i] = sinRepetidos[i];
                 }
-                novo[temporal.length] = elemento;
-                temporal = novo;
+                novo[sinRepetidos.length] = elemento;
+                sinRepetidos = novo;
             }
-            System.out.println(Arrays.toString(temporal));
+            System.out.println(Arrays.toString(sinRepetidos));
         }
+        System.out.println("La tabla final es: " + Arrays.toString(sinRepetidos));
     }
 }
