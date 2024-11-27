@@ -12,5 +12,9 @@ public class iguais {
         else
             System.out.println("distintas");
 
+        int [][] taboa={{1,2,3,4},{4,5,6,7,8,9,1},{1,3,1,4}};
+        System.out.println(taboa.length);
+        System.out.println(taboa[2].length);
+
     }
 }
