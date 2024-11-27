@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class sinRepetidos {
     public static void main(String[] args) {
         int[] repetidos = {1, 9,2, 3, 4, 5,9,6, 6, 7, 8, 9, 1, 2, 3};
-        int[] sinRepetidos = new int[1];
+        int[] sinRepetidos = new int[0];
         for (int elemento : repetidos) {
             if (Ej5.buscarValor(sinRepetidos, elemento) == -1) {
                                 int[] novo = new int[sinRepetidos.length + 1];
