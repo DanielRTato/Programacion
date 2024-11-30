@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * @author Daniel
+ * @author Danielr
  */
 public class Main {
     public static void main(String[] args) {
