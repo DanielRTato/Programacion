@@ -9,5 +9,20 @@ import java.util.Scanner;
 public class Ej3 {
     public static void main(String[] args) {
 
+        int base;
+        int altura;
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Introduce la base del rectangulo");
+        System.out.println("Introduce la altura");
+        base = scan.nextInt();
+        altura = scan.nextInt();
+
+
+        while (base>=0 && altura>=0){
+            System.out.println("EL resultado es: " + base*altura);
+            break;
+        }
+        scan.close();
     }
 }
