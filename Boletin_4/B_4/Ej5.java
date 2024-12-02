@@ -1,3 +1,12 @@
+/**
+ * Calcula tu letra de DNi apartir del número
+ * @author DanielRt
+ * @version 1.0
+ *
+ */
+
+
+
 import java.util.Scanner;
 
 public class Ej5 {
