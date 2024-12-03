@@ -1,6 +1,7 @@
 import java.util.Scanner;
 /**
  * Realizar o programa que pida un número e como resultado nos de o factorial no número (n!).
+ * @author Daniel
  */
 public class Ej6 {
     public static void main(String[] args) {
