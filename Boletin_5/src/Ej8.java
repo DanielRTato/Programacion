@@ -15,9 +15,11 @@ public class Ej8 {
         do {
             System.out.println("Introduce un numero");
             int numero = scan.nextInt();
+
+            if (numero==999) break;
+
             contador++;
             resultado +=numero;
-            if (numero==999) break;
         }
         while (contador<10);
 
