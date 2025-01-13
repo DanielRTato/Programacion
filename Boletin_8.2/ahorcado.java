@@ -21,13 +21,20 @@ public class ahorcado {
         return teclado.next();
     }
 
-    public static void  most (String respuesta){
-        for ( int i = 0; i<respuesta.length(); i++){
-            System.out.println(respuesta.replace(respuesta.charAt(i),"_"));
+    public static String most(String respuesta, String pista, String letra) {
+        StringBuilder nuevaPista = new StringBuilder(pista.replace(" ", ""));
+        for (int i = 0; i < respuesta.length(); i++) {
+            if (respuesta.charAt(i) == letra.charAt(0)) {
+                nuevaPista.setCharAt(i, letra.charAt(0));
+            }
         }
+        return nuevaPista.toString().replace("", " ").trim();
     }
-
 }
+
+
+
+
 
 
 
