@@ -13,7 +13,7 @@ public class Main {
 
     /**
      *  Devulve las dos primeras letras de un String
-     * @param str el string
+     * @param str el stringg
      */
     public static void dosCararteres (String str){
         System.out.println(str.substring(0,2));
