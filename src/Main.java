@@ -12,7 +12,7 @@ public class Main {
     }
 
     /**
-     *  Devulve las dos primeras letras de un String
+     *  Devulve las dos primeras letras de un Stringg
      * @param str el stringg
      */
     public static void dosCararteres (String str){
