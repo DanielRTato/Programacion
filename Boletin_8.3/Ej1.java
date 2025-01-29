@@ -4,7 +4,7 @@ public class Ej1 {
     public static void main(String[] args) {
 
         ArrayList<String> lista = new ArrayList<>();
-        desenvolver("feigorificos",4,lista);
+        desenvolver("escasa",3,lista);
 
         for (String palabra:lista) {
             System.out.println(palabra);

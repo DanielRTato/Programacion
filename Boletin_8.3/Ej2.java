@@ -30,7 +30,7 @@ public class Ej2 {
         String prim = texto.substring(0,titulo);
         String fin = texto.substring(titulo);
 
-        System.out.println("<HTML>"+"\n "+"<h1>"+prim+"</h1>"+ "\n  "+" <p>"+fin+"  </p>"+"\n"+"</HTML>");
+        System.out.println("<HTML>" + "\n" + "<h1>" + prim + "</h1>" + "\n " + "<p>" + fin + "</p>" + "\n" + "</HTML>");
 
 
     }
