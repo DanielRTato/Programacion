@@ -10,7 +10,7 @@ public class Ej8 {
 
       comparacion= texto1.equalsIgnoreCase(texto2);
 
-      if (comparacion==true){
+      if (comparacion){
           System.out.println("Son iguales");
       }else{
           System.out.println("Son distintos");
