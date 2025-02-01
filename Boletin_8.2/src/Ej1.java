@@ -1,4 +1,9 @@
-public class Main {
+package src;
+
+/**
+ *
+ */
+public class Ej1 {
     public static void main(String[] args) {
 
         String str = "hola pepe pepito pera";
@@ -16,6 +21,7 @@ public class Main {
      * @param str el stringg
      */
     public static void dosCararteres (String str){
+
         System.out.println(str.substring(0,2));
     }
 
@@ -30,7 +36,7 @@ public class Main {
     }
 
     /**
-     * Imprime los 3 ultimos characterresFn
+     * Imprime los 3 ultimos characterres
      * @param str
      */
     public static void tresUltimos (String str){

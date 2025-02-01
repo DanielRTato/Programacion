@@ -1,3 +1,8 @@
+package src;
+
+/**
+ * Valida contraseña
+ */
 public class Ej10 {
     public static void main(String[] args) {
 

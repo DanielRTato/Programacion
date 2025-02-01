@@ -1,3 +1,5 @@
+package src;
+
 public class Ej2 {
     public static void main(String[] args) {
 
@@ -9,13 +11,29 @@ public class Ej2 {
         System.out.println(digitos(mancha));
 
     }
+
+    /**
+     * Pone comas despues de cada letra
+     * @param mancha
+     * @param coma
+     */
     public static void  coma (String mancha, String coma){
         System.out.println( String.join(String.valueOf(coma), mancha.split("")));
     }
+
+    /**
+     * remplaza espacios por /_
+     * @param mancha
+     */
     public static void espazos (String mancha){
         System.out.println(mancha.replace(" ", "/_"));
     }
 
+    /**
+     * Remplaza digitos por X
+     * @param mancha
+     * @return
+     */
     public static String digitos(String mancha) {
         char x = 'X';
         StringBuilder nuevaMancha = new StringBuilder(mancha);
