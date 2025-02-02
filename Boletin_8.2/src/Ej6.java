@@ -4,10 +4,12 @@ public class Ej6 {
     public static void main(String[] args) {
 
         String texto ="algoritmos";
+        String igual ="anita lava la tina";
 
         System.out.println(consonate(texto));
         System.out.println(vocales(texto));
         System.out.println(siguienteVocal(texto));
+        System.out.println(palindromo(igual) ? "Es un palíndromo" : "No es un palíndromo");
 
     }
 
@@ -49,5 +51,18 @@ public class Ej6 {
             }
         }
         return resultado.toString();
+    }
+
+    /**
+     * Compruba si un texto es palindromo
+     * @param igual
+     * @return
+     */
+    public static boolean palindromo (String igual){
+
+        String limpio = igual.replaceAll(" ", "").toLowerCase();
+        String reves = new StringBuilder(limpio).reverse().toString();
+
+        return reves.equals(limpio);
     }
 }
