@@ -7,6 +7,6 @@ public class Ej8 {
     }
 
     public static String decimal (String binario){
-        String decimal = binario.getBytes(binario);
+       // String decimal = binario.getBytes(binario);
     }
 }
