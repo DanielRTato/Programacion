@@ -338,4 +338,50 @@ public static void main(String[] args) {
         System.out.println("Resultado = "+ caracteresExtraidos);
 
     }
+
+
+import java.util.Scanner;
+
+public class MenuConsola {
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+int opcion;
+
+        do {
+            System.out.println("\n===== MENÚ PRINCIPAL =====");
+            System.out.println("1. Opción 1");
+            System.out.println("2. Opción 2");
+            System.out.println("3. Opción 3");
+            System.out.println("0. Salir");
+            System.out.print("Seleccione una opción: ");
+
+            while (!scanner.hasNextInt()) {
+                System.out.println("Por favor, ingrese un número válido.");
+                scanner.next();
+            }
+
+            opcion = scanner.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    System.out.println("Has seleccionado la Opción 1.");
+                    break;
+                case 2:
+                    System.out.println("Has seleccionado la Opción 2.");
+                    break;
+                case 3:
+                    System.out.println("Has seleccionado la Opción 3.");
+                    break;
+                case 0:
+                    System.out.println("Saliendo del programa...");
+                    break;
+                default:
+                    System.out.println("Opción no válida. Inténtelo de nuevo.");
+            }
+        } while (opcion != 0);
+
+        scanner.close();
+    }
+}
+
 }
