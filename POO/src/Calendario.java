@@ -13,6 +13,12 @@ public class Calendario {
         setYear(year);
     }
 
+    public void incrementaAno(){
+       if (year< 2147483647)year++;
+       else
+           throw new RuntimeException("Valor demasiado grande");
+    }
+
     public void incrementarDia(){
         day++;
         if (day>monthLong( month, year)){
