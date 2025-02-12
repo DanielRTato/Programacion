@@ -19,6 +19,14 @@ public class Calendario {
            throw new RuntimeException("Valor demasiado grande");
     }
 
+    public void incrementaMes (){
+        month++;
+        if (month>12){
+            year++;
+            month = 1;
+        }
+    }
+
     public void incrementarDia(){
         day++;
         if (day>monthLong( month, year)){
@@ -26,8 +34,7 @@ public class Calendario {
             month ++;
         }
         if (month>12){
-            month = 1;
-            year++;
+           incrementaMes();
         }
     }
     private int monthLong ( int month, int year){
@@ -54,13 +61,10 @@ public class Calendario {
         }
     }
 
-    public void incrementaMes (){
-        month++;
-        if (month>12){
-            year++;
-            month = 1;
-        }
+    public void monstrarData(){
+        System.out.println("La fecha es " + day +"-"+ month+  "-" + year);
     }
+
 
 
     public int getDay() {
