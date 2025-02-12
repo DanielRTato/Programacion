@@ -62,7 +62,7 @@ public class Calendario {
     }
 
     public void setDay(int day) {
-        if (day>0 && day<32)this.day = day;
+        if (day>0 && day<=monthLong(month,year))this.day = day;
         else
             throw new RuntimeException("El dia debe ser entre 1 y 31");
     }
@@ -82,7 +82,7 @@ public class Calendario {
     }
 
     public void setYear(int year) {
-        if (year<0)this.year = year;
+        if (year>=0)this.year = year;
         else
             throw new RuntimeException("El valor del ano debe ser positivo");
     }
