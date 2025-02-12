@@ -8,9 +8,9 @@ public class Calendario {
     private int year;
 
     public Calendario (int day, int month, int year){
-        day = 1;
-        month = 1;
-        year = 1;
+        setDay(day);
+        setMonth(month);
+        setYear(year);
     }
 
     public void incrementarDia(){
