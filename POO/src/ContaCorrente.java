@@ -3,7 +3,7 @@ public class ContaCorrente {
     private String nif;
     private double saldo;
     private String numeroConta;
-    private static int cintadorContas;
+    public static int cintadorContas;
 
     public ContaCorrente (String nome, String nif, double saldo, String numeroConta){
         this.nome = nome;
@@ -43,7 +43,8 @@ public class ContaCorrente {
     }
 
     public void setSaldo(double saldo) {
-        this.saldo = saldo;
+        if (saldo>=0 )this.saldo = saldo;
+        else throw new RuntimeException("Cantidad invalida");
     }
 
     public String getNumeroConta() {
@@ -73,6 +74,7 @@ public class ContaCorrente {
             return true;
         }
     }
+
 
     public String mostrarInformacion(){
         return "El dueño de la cuenta es " + nome + "con dni " + nif + "tiene un saldo de " + saldo + " en la cuenta " + numeroConta;

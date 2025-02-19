@@ -11,10 +11,13 @@ public class Main {
     cal.incrementarDia();
     cal.monstrarData();
 
-    ContaCorrente conta = new ContaCorrente("Pepe","53975854E",1000,"123456789");
-    conta.SacarDinero(100);
-    conta.ingresarDinero(2000);
-        System.out.println(conta.mostrarInformacion());
+
+        System.out.println(ContaCorrente.cintadorContas);
+    ContaCorrente contaDani = new ContaCorrente("Pepe","12345678Z",1000,"123456789");
+    contaDani.SacarDinero(100);
+    contaDani.ingresarDinero(2000);
+        System.out.println(contaDani.mostrarInformacion());
+        System.out.println(ContaCorrente.cintadorContas);
 
 
 
