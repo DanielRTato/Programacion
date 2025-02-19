@@ -11,7 +11,7 @@ public class Main {
     cal.incrementarDia();
     cal.monstrarData();
 
-    ContaCorrente conta = new ContaCorrente("Pepe","123456789",1000,"123456789");
+    ContaCorrente conta = new ContaCorrente("Pepe","53975854E",1000,"123456789");
     conta.SacarDinero(100);
     conta.ingresarDinero(2000);
         System.out.println(conta.mostrarInformacion());

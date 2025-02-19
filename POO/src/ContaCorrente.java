@@ -3,12 +3,14 @@ public class ContaCorrente {
     private String nif;
     private double saldo;
     private String numeroConta;
+    private static int cintadorContas;
 
     public ContaCorrente (String nome, String nif, double saldo, String numeroConta){
         this.nome = nome;
-        this.nif = nif;
-        this.saldo = saldo;
+        setNif(nif);
+        setSaldo(saldo);
         this.numeroConta = numeroConta;
+        cintadorContas ++;
     }
 
     public String getNome() {
@@ -24,7 +26,13 @@ public class ContaCorrente {
     }
 
     public void setNif(String nif) {
+        char letraNif[] = {'T','R','W','A','G','M','Y','F','P','D','X','B','N','J','Z','S','Q','V','H','L','C','K','E'};
+
         if (nif.length()==9 && Character.isLetter(nif.charAt(8))){
+            if (nif.charAt(8) == letraNif[Integer.parseInt(nif.substring(0,8))%23]){ //o usar getInteger
+                this.nif = nif;
+            }
+            else{ throw new RuntimeException("NIF invalido");}
             this.nif = nif;
         }
         else{ throw new RuntimeException("NIF invalido");}
