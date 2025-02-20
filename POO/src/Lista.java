@@ -27,6 +27,7 @@ public class Lista {
     public void insertaFinal(int numero){
         tabla = Arrays.copyOf(tabla, tabla.length +1);
         tabla[tabla.length -1] = numero;
+        //System.arraycpy(lista, o , novaLista, 0 , lista.length);
     }
 
 
