@@ -9,7 +9,7 @@ public class Reloj {
         PM
     }
 
-    public Reloj(int segundo, int minuto, int hora) {
+    public Reloj(int hora, int minuto, int segundo) {
         this.segundo = segundo;
         this.minuto = minuto;
         setHora(hora);
@@ -50,7 +50,7 @@ public class Reloj {
     }
 
     public String mostrarHora() {
-        return "la hora es: " + hora + "/" + minuto + "/" + segundo;
+        return "la hora es: " + hora + ":" + minuto + ":" + segundo + " " +  formato;
     }
 
 }

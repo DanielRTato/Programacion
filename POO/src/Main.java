@@ -20,6 +20,10 @@ public class Main {
         System.out.println(ContaCorrente.cintadorContas);
 
 
+        Reloj hoy = new Reloj(14,12,20);
+        System.out.println(hoy.mostrarHora());
+
+
 
     }
 }
