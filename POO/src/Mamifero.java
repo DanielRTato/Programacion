@@ -8,5 +8,7 @@ public  abstract class Mamifero  extends Animal{
     public void mamar(){
         System.out.println(getNome() + " está mamando!");
     }
+    public abstract String parir();
+
 
 }

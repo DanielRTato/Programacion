@@ -1,8 +1,10 @@
-public class Can extends Mamifero {
+public class Can extends Mamifero implements Son {
 
 
-    public Can(String nome, int idade, String raza, boolean manchas) {
+    String tipoSon;
+    public Can(String nome, int idade, String tipoSon) {
         super(nome, idade);
+        this.tipoSon = tipoSon;
 
     }
 
@@ -11,5 +13,12 @@ public class Can extends Mamifero {
         System.out.println("Corre a 4 patas");
     }
 
+    public String parir(){
+        return "Bebe";
+    }
 
+    @Override
+    public void voz() {
+        System.out.println("Ehiiaaaaa!");
+    }
 }

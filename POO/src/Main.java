@@ -23,6 +23,11 @@ public class Main {
         Reloj hoy = new Reloj(14,12,20);
         System.out.println(hoy.mostrarHora());
 
+        Can Silva = new Can ("Mai", 14 );
+        Silva.voz();
+        Silva.parir();
+        Silva.desprazar();
+        Silva.comer();
 
 
     }
