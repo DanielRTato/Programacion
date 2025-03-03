@@ -5,6 +5,7 @@ public class Libro {
     private short numPaginas;
     private float valoracion;
 
+    // Contrusctor por defecto
     public Libro(){
         this.titulo = "";
         this.autor = "";
@@ -13,6 +14,7 @@ public class Libro {
         this.valoracion = 0.0f;
     }
 
+    // contructor por parámetros
     public Libro(String titulo, String autor, int ano, short numPaginas, float valoracion){
          this.titulo = titulo;
          this.autor = autor;
