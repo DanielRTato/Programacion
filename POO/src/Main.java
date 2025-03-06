@@ -29,6 +29,8 @@ public class Main {
         Silva.desprazar();
         Silva.comer();
 
+        PrazaGaraxe placita= new PrazaGaraxe("sdfdsf", 12, "Vigo", 123, true,12,15,1);
+
 
     }
 }
