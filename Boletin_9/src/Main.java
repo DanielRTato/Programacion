@@ -24,6 +24,25 @@ public class Main {
         Libro libro2 = new Libro("king", "toking", 123, (short) 400,4);
         libro2.amorsar();
 
+        System.out.println("---------------------");
+
+        Consumo consume  = new Consumo();
+
+        consume.setLitros(50);
+        consume.setPGas(1.57f);
+
+        System.out.println("---------------------");
+        Consumo consume1 = new Consumo(120,50,50,1.70f);
+
+        System.out.println(consume1.consumoMedio());
+        consume1.setLitros(60);
+        System.out.println(consume1.getvMedvelocidade());
+
+
+
+
+
+
 
 
 

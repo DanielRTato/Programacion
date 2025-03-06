@@ -3,13 +3,13 @@ public class Consumo {
     private int km; //km recorridos polo coche
     private int litros; // litros consumidos de combustible
     private int vMedvelocidade; // media de velocidad
-    private int pGas; // prezo da gasolina
+    private float pGas; // prezo da gasolina
 
     public Consumo(){
         // constructor sin parametros
     }
 
-    public Consumo(int km, int litros, int vMedvelocidade, int pGas){
+    public Consumo(int km, int litros, int vMedvelocidade, float pGas){
 
         this.km = km;
         this.litros = litros;
@@ -66,7 +66,11 @@ public class Consumo {
         }
     }
 
-    public void setPGas(int pGas){
+    public int getvMedvelocidade(){
+        return this.vMedvelocidade = vMedvelocidade;
+    }
+
+    public void setPGas(float pGas){
      if (pGas > 0){
          this.pGas = pGas;
      }else{
