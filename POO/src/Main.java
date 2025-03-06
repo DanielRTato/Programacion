@@ -23,7 +23,7 @@ public class Main {
         Reloj hoy = new Reloj(14,12,20);
         System.out.println(hoy.mostrarHora());
 
-        Can Silva = new Can ("Mai", 14 );
+        Can Silva = new Can ("Mai", 14,"f" );
         Silva.voz();
         Silva.parir();
         Silva.desprazar();
@@ -31,6 +31,6 @@ public class Main {
 
         PrazaGaraxe placita= new PrazaGaraxe("sdfdsf", 12, "Vigo", 123, true,12,15,1);
 
-
+        Vivienda viviendita = new Vivienda("sdfdsf", 12, "Vigo", 123, true, 12, 15, 1, 33, "wataata", 12, placita);
     }
 }
