@@ -52,7 +52,7 @@ public class Socio extends Miembro implements CalculoGastosIngresos{
 
     @Override
     public double gastosIngresos() {
-        return 0;
+        return cuota;
     }
 
     @Override
