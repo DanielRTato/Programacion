@@ -24,13 +24,17 @@ public class Main {
         System.out.println(hoy.mostrarHora());
 
         Can Silva = new Can ("Mai", 14,"f" );
+
         Silva.voz();
         Silva.parir();
         Silva.desprazar();
         Silva.comer();
 
+        Canguro tobi = new Canguro("Tobi", 5);
+        tobi.ronroneo();
+
         PrazaGaraxe placita= new PrazaGaraxe("sdfdsf", 12, "Vigo", 123, true,12,15,1);
 
-        Vivienda viviendita = new Vivienda("sdfdsf", 12, "Vigo", 123, true, 12, 15, 1, 33, "wataata", 12, placita);
+       // Vivienda viviendita = new Vivienda("sdfdsf", 12, "Vigo", 123, true, 12, 15, 1, 33, "wataata", "11b");
     }
 }

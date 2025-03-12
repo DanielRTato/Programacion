@@ -1,10 +1,10 @@
-public class Vivienda  extends Inmueble{
+/**public class Vivienda  extends Inmueble{
 
     private int numHabitaciones;
     private String observaciones;
     private PrazaGaraxe garaxe;
-    private String piso;
-
+    private String piso;}
+/*
     public Vivienda(String calle, int numero, String localidad, double precio, boolean venta, double ancho, double longo, int plaza, int numHabitaciones, String observaciones,PrazaGaraxe, String piso){
         super(calle, numero, localidad, precio, venta);
         setnumHabitaciones(numHabitaciones);
@@ -62,3 +62,4 @@ public class Vivienda  extends Inmueble{
 
 
 }
+*/
