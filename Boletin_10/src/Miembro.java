@@ -20,16 +20,16 @@ public class Miembro {
         this.nome = nome;
     }
 
-    public void setDni(String nif) {
+    public void setDni(String dni) {
         char letraNif[] = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
 
-        if (nif.length() == 9 && Character.isLetter(nif.charAt(8))) {
-            if (nif.charAt(8) == letraNif[Integer.parseInt(nif.substring(0, 8)) % 23]) { //o usar getInteger
-                this.dni = dni;
+        if (dni.length() == 9 && Character.isLetter(dni.charAt(8))) {
+            if (dni.charAt(8) == letraNif[Integer.parseInt(dni.substring(0, 8)) % 23]) { //o usar getInteger
+                this.dni = this.dni;
             } else {
                 throw new RuntimeException("NIF invalido");
             }
-            this.dni = dni;
+            this.dni = this.dni;
         } else {
             throw new RuntimeException("NIF invalido");
         }
