@@ -24,17 +24,13 @@ public class Miembro {
         char letraNif[] = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
 
         if (dni.length() == 9 && Character.isLetter(dni.charAt(8))) {
-            if (dni.charAt(8) == letraNif[Integer.parseInt(dni.substring(0, 8)) % 23]) { //o usar getInteger
-                this.dni = this.dni;
-            } else {
-                throw new RuntimeException("NIF invalido");
+            if (dni.charAt(8) == letraNif[Integer.parseInt(dni.substring(0, 8)) % 23]) {
+                this.dni = dni; // Asignar el valor correcto
             }
-            this.dni = this.dni;
         } else {
             throw new RuntimeException("NIF invalido");
         }
     }
-
 
     public String aCadea() {
         return "El nombre de usuario es " + nome + " con DNI " + dni;
