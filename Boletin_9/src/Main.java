@@ -39,6 +39,9 @@ public class Main {
         System.out.println(consume1.getvMedvelocidade());
 
 
+        System.out.println("---------------------");
+
+
 
 
 
