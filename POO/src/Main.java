@@ -36,5 +36,6 @@ public class Main {
         PrazaGaraxe placita= new PrazaGaraxe("sdfdsf", 12, "Vigo", 123, true,12,15,1);
 
        // Vivienda viviendita = new Vivienda("sdfdsf", 12, "Vigo", 123, true, 12, 15, 1, 33, "wataata", "11b");
+
     }
 }
