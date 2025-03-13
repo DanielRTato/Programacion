@@ -4,9 +4,8 @@ public class Data {
     private int ano;
 
     public Data(String fecha) {
-        if (fecha.matches("\\d{2}-\\d{2}-\\d{4}")) {
-            String[] partes = fecha.split("-");
-            this.dia = Integer.parseInt(partes[0]);
+        if (fecha.matches("\\d{2}[-/]\\d{2}[-/]\\d{4}")) {
+            String[] partes = fecha.split("[-/]");            this.dia = Integer.parseInt(partes[0]);
             this.mes = Integer.parseInt(partes[1]);
             this.ano = Integer.parseInt(partes[2]);
         } else {
