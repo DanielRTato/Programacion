@@ -14,7 +14,6 @@ public class Data {
         }
     }
 
-    // Getters y setters para dia, mes y ano
     public int getDia() {
         return dia;
     }
