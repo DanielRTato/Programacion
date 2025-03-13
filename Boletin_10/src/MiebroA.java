@@ -19,18 +19,22 @@ public  abstract class MiebroA {
     public void setNome(String nome) {
         this.nome = nome;
     }
-
     public void setDni(String dni) {
         char letraNif[] = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
 
         if (dni.length() == 9 && Character.isLetter(dni.charAt(8))) {
-            if (dni.charAt(8) == letraNif[Integer.parseInt(dni.substring(0, 8)) % 23]) {
-                this.dni = dni; // Asignar el valor correcto
+            try {
+                int numero = Integer.parseInt(dni.substring(0, 8));
+                char letra = dni.charAt(8);
+                if (letra == letraNif[numero % 23]) {
+                    this.dni = dni; // Asignar el valor correcto
+                    return;
+                }
+            } catch (NumberFormatException e) {
+                // No es un número válido
             }
-        } else {
-            throw new RuntimeException("NIF invalido");
-        }
-    }
+        }}
+
 
     public String aCadea() {
         return "El nombre de usuario es " + nome + " con DNI " + dni;
