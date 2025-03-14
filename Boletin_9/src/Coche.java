@@ -9,6 +9,16 @@ public class Coche {
        return velocidade;
     }
 
+    public void acelerar (int valor){
+        velocidade = valor + velocidade;
+    }
+
+    public void frenar (int menos){
+        velocidade = velocidade - menos;
+    }
+
+
+
 
 
 
