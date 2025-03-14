@@ -7,7 +7,10 @@ public class Main {
         Coche coche1 = new Coche("Toyota", "Corolla", 2021,1,1);
         coche1.arrancar();
 
-        Coche coche2 = new Coche("Nissan", "Sentra");
+        Coche coche2 = new Coche("Nissan", "Sentra"); // si no le paso los parámetros, se toman los valores por defecto
         coche2.arrancar();
+        coche2.repostar(10);
+        coche2.arrancar();
+        coche2.viajar(100);
     }
 }
