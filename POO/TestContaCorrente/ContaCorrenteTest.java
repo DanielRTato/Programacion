@@ -25,7 +25,7 @@ class ContaCorrenteTest {
         assertEquals(1500, conta.getSaldo());
     }
 
-    @ParameterizedTest
+    @ParameterizedTest(name = "Cantidad: {0}, Resultado esperado: {1}")
     @CsvSource({
             "0, 100",
             "1, 99",
@@ -36,4 +36,5 @@ class ContaCorrenteTest {
         nueva.SacarDinero(cantidad);
         assertEquals(resultado, nueva.getSaldo());
 
-}}
+}
+}
