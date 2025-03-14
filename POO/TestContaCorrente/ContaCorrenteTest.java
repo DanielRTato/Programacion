@@ -1,5 +1,8 @@
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ContaCorrenteTest {
@@ -21,4 +24,16 @@ class ContaCorrenteTest {
         assertTrue(conta.ingresarDinero(500));
         assertEquals(1500, conta.getSaldo());
     }
-}
+
+    @ParameterizedTest
+    @CsvSource({
+            "0, 100",
+            "1, 99",
+            "10, 90"
+    })
+    void sacarDinero(int cantidad, int resultado) {
+        ContaCorrente nueva = new ContaCorrente("Juan", "12345678Z", 100.0, "50sp");
+        nueva.SacarDinero(cantidad);
+        assertEquals(resultado, nueva.getSaldo());
+
+}}
