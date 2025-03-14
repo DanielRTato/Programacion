@@ -1,5 +1,7 @@
 package orientacionobjetos;
 
+import java.util.Objects;
+
 public class Coche {  //el nombre de las clases va en mayúscula
 
     // atributos o propiedades
@@ -97,5 +99,38 @@ public class Coche {  //el nombre de las clases va en mayúscula
     }
     public void setLitrosEnDeposito(double litrosEnDeposito) {
         this.litrosEnDeposito = litrosEnDeposito;
+    }
+
+    // metodos especiales (toString, equals, hashCode) siempre el mismo nombre y no llevan parámetros
+
+    // equals compara dos objetos y devuelve true si son iguales y false si no lo son,
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+        Coche coche = (Coche) o;
+        return anio == coche.anio && Double.compare(velocidadActual, coche.velocidadActual) == 0
+                && Double.compare(litrosEnDeposito, coche.litrosEnDeposito) == 0 && Objects.equals(marca, coche.marca)
+                && Objects.equals(modelo, coche.modelo);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(marca, modelo, anio, velocidadActual, litrosEnDeposito);
+    }
+
+    // toString devuelve una cadena de texto con la información del objeto
+
+    @Override
+    public String toString() {
+        return "Coche{" +
+                "marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", anio=" + anio +
+                ", velocidadActual=" + velocidadActual +
+                ", litrosEnDeposito=" + litrosEnDeposito +
+                '}';
     }
 }

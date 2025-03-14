@@ -12,5 +12,6 @@ public class Main {
         coche2.repostar(10);
         coche2.arrancar();
         coche2.viajar(100);
+        System.out.println(coche2);
     }
 }
