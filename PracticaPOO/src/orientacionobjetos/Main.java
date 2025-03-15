@@ -1,4 +1,4 @@
-import orientacionobjetos.Coche;
+package orientacionobjetos;
 
 public class Main {
     public static void main(String[] args) {
