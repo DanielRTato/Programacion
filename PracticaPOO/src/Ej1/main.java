@@ -2,6 +2,7 @@ package Ej1;
 
 public class main {
     public static void main(String[] args) {
+        /*
         Alumno alumno1 = new Alumno("Juan", "Perez", "sqda@asd",18,986111111);
         System.out.println(alumno1.toString());
         System.out.println(alumno1.esMayorDeEdad());
@@ -30,8 +31,23 @@ public class main {
         }else{
             System.out.println("No son el mismo alumno");
         }
+*/
+        // Crear un array de 6 alumnos y mostrar el alumno más joven
+        var alumnos = new Alumno[5];
+        alumnos[0] = new Alumno("P", "Perez", "sqda@asd",18,986111111);
+        alumnos[1] = new Alumno("Maria", "Gomez", 12);
+        alumnos[2] = new Alumno("Alex", "Gomez", "asdasd@asd",20,986111111);
+        alumnos[3] = new Alumno("Juan", "Perez",11);
+        alumnos[4] = new Alumno("Dalinar", "Perez",131);
 
-
+        int alumnoJoven = 0;
+        for (int i = 1; i < alumnos.length; i++) {
+            if (alumnos[alumnoJoven].getEdad() >  alumnos[i].getEdad()) {
+                alumnoJoven = i;
+            }
+        }
+        Alumno joven = alumnos[alumnoJoven];
+        System.out.println("El alumno más joven es: %s %s".formatted(joven.getNombre(), joven.getApellido()));
 
     }
 }
