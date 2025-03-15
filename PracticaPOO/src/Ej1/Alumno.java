@@ -10,8 +10,8 @@ public class Alumno {
     private int edad;
     private int telefono;
 
+    // Constructor sin argumentos
     public Alumno(){
-
     }
 
     public Alumno(String nombre, String apellido, int edad){
