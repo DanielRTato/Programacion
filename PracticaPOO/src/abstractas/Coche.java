@@ -1,0 +1,19 @@
+package abstractas;
+
+public class Coche extends Vehiculo{
+
+    private int velocidadMaxima;
+
+    public Coche(String marca, String modelo, int velocidadMaxima) {
+        super(marca, modelo);
+        this.velocidadMaxima = velocidadMaxima;
+    }
+
+    public void mostrarVelocidadMaxima(){
+        System.out.println("Velocidad Maxima: " + velocidadMaxima + " km/h");
+    }
+
+    public void conducir(){
+        System.out.println("Conduciendo el coche");
+    }
+}
