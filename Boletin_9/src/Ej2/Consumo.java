@@ -1,3 +1,5 @@
+package Ej2;
+
 public class Consumo {
 
     private int km; //km recorridos polo coche
