@@ -1,3 +1,5 @@
+package Ej3;
+
 public class Coche {
     private int velocidade;
 
