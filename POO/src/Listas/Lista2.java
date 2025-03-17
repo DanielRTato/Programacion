@@ -32,6 +32,7 @@ public class Lista2{
             }
             actual.setNodoSeguinte(nuevoNodo);
         }
+        tamano--;
     }
 
     public void retirarFinal(){
@@ -66,6 +67,27 @@ public class Lista2{
     public boolean estaVacio(){
         if (nodoInicial == null) return true;
         else return false;
+    }
+
+    @Override
+    public String toString() {
+        return "Lista2{" +
+                "nodoInicial=" + nodoInicial +
+                ", tamano=" + tamano +
+                '}';
+    }
+
+    public void mostrarValores(){
+        if (!estaVacio()){
+            if (tamano !=1){
+                while   (nodoInicial.getNodoSeguinte() != null){
+                    System.out.println(nodoInicial.getValor());
+                    nodoInicial.getNodoSeguinte();
+                }
+            }
+            else System.out.println(nodoInicial.getValor());
+        }
+        else System.out.println("esta vacio");
     }
 
 }
