@@ -33,8 +33,8 @@ class GraderTest {
 
     @ParameterizedTest (name = "Cantidad: {0}, Resultado esperado: {1}")
     @CsvSource({
-            "90, A",
-            "91, A",
+            "90, B",
+            "51, A",
             "100, A",
             "99, A"
     })

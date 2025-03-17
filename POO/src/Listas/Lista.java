@@ -1,4 +1,5 @@
-import java.lang.reflect.Array;
+package Listas;
+
 import java.util.Arrays;
 
 /*
@@ -15,6 +16,7 @@ mostra elementos da lista por consola
  */
 public class Lista {
     private int[] tabla;
+    private Nodo nodoInicial;
 
     public Lista() {
         this.tabla = new int [0];
@@ -28,6 +30,15 @@ public class Lista {
         tabla = Arrays.copyOf(tabla, tabla.length +1);
         tabla[tabla.length -1] = numero;
         //System.arraycpy(lista, o , novaLista, 0 , lista.length);
+    }
+
+    public void insertarInicio(){
+
+    }
+
+    public boolean estaVacio(){
+        if (nodoInicial == null) return true;
+        else return false;
     }
 
 
