@@ -28,7 +28,7 @@ public abstract class Animal {
     }
 
     public void setIdade(int idade) {
-        this.idade = idade;
+        this.idade =Math.abs(idade);
     }
 
     public abstract  void  desprazar();

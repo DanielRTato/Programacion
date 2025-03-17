@@ -1,6 +1,6 @@
 package abstractas;
 
-public class Coche extends Vehiculo{
+public class Coche extends Vehiculo {
 
     private int velocidadMaxima;
 
@@ -9,11 +9,12 @@ public class Coche extends Vehiculo{
         this.velocidadMaxima = velocidadMaxima;
     }
 
-    public void mostrarVelocidadMaxima(){
+    public void mostrarVelocidadMaxima() {
         System.out.println("Velocidad Maxima: " + velocidadMaxima + " km/h");
     }
 
-    public void conducir(){
+    @Override
+    public void conducir() {
         System.out.println("Conduciendo el coche");
     }
 }
