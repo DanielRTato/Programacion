@@ -1,11 +1,11 @@
 package abstractas;
 
-public abstract class VehiculoAereo extends Vehiculo{
+public abstract class VehiculoAereo  extends Vehiculo{
 
     private int altitudMaxima;
 
-    public VehiculoAereo(String marca, String modelo, int altitudMaxima) {
-        super(marca, modelo);
+    public VehiculoAereo(String marca,  int altitudMaxima) {
+        super(marca);
         this.altitudMaxima = altitudMaxima;
     }
 
@@ -16,6 +16,7 @@ public abstract class VehiculoAereo extends Vehiculo{
 
     public abstract void despegar();
     public abstract void aterrizar();
+
 
 
 }

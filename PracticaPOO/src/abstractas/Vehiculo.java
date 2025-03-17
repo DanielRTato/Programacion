@@ -5,9 +5,15 @@ public abstract class Vehiculo {
     private String marca;
     private String modelo;
 
-    public Vehiculo(String marca, String modelo) {
+    public Vehiculo(String marca, String modelo)  {
         this.marca = marca;
         this.modelo = modelo;
+
+    }
+
+    public Vehiculo(String marca ) {
+        this.marca = marca;
+
     }
 
     public void mostrarInfromacion(){
@@ -16,7 +22,6 @@ public abstract class Vehiculo {
     }
 
     public abstract void conducir();
-
 
 
 }

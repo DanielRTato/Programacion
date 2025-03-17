@@ -9,8 +9,8 @@ public class Animal { // si fuera final no se podrian crear clases hijas
 
     // Constructor
     public Animal(int estatura, double peso, String raza) {
-        this.estatura = estatura;
-        this.peso = peso;
+        setEstatura(estatura);
+        setPeso(peso);
         this.raza = raza;
     }
 
@@ -22,7 +22,8 @@ public class Animal { // si fuera final no se podrian crear clases hijas
     }
 
     public void setEstatura(int estatura) {
-        this.estatura = estatura;
+      if (estatura > 0)   this.estatura = estatura;
+      else throw new IllegalArgumentException("La estatura no puede ser negativa");
     }
 
     public double getPeso() {
@@ -30,7 +31,8 @@ public class Animal { // si fuera final no se podrian crear clases hijas
     }
 
     public void setPeso(double peso) {
-        this.peso = peso;
+      if (peso > 0) this.peso = peso;
+      else peso = 0;
     }
 
     public String getRaza() {
