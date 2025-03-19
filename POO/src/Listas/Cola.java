@@ -2,6 +2,6 @@ package Listas;
 
 public interface Cola {
 
-    void encolar();
+    void encolar(int novo);
     int desencolar();
 }

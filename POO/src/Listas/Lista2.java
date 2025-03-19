@@ -1,7 +1,5 @@
 package Listas;
 
-import java.util.Arrays;
-
 public class Lista2{
 
     private Nodo nodoInicial;
@@ -67,6 +65,17 @@ public class Lista2{
     public boolean estaVacio(){
         if (nodoInicial == null) return true;
         else return false;
+    }
+
+    public int getNodo(int n){
+        Nodo acutual = nodoInicial;
+        if (tamano-1 > n) {
+            for (int i = 0; i < n; i++) {
+                acutual = acutual.getNodoSeguinte();
+            }
+            return acutual.getValor();
+        }
+        else return -1;
     }
 
     @Override

@@ -9,7 +9,7 @@ public class Pila extends Lista2 implements Cola{
 
 
     @Override
-    public void encolar() {
+    public void encolar(int novoValor) {
 
     }
 
