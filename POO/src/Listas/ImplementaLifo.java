@@ -12,6 +12,8 @@ public class ImplementaLifo extends Lista2 implements  Lifo{
 
     @Override
     public int desapilar() {
-        getNodo()
+        Nodo nodo = getNodo(getTamanho() - 1);
+        retirarFinal();
+        return nodo;
     }
 }

@@ -15,6 +15,12 @@ public class Pila extends Lista2 implements Cola{
 
     @Override
     public int desencolar() {
-        return 0;
+        if (estaVacio()) {
+            return -1;
+        }
+        int valor = getNodo(0);
+        retirarInicio();
+        return valor;
     }
+
 }
