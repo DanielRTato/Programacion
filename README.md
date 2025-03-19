@@ -6,6 +6,7 @@ Boletines y proyectos de programación.
 
 - [Boletines](#boletines)
 - [Proyectos](./proyectos): Proyectos de programación desarrollados durante el curso.
+-  [Otros Contenidos](#otros-contenidos)
 
 ### Boletines
 
@@ -32,12 +33,12 @@ Boletines y proyectos de programación.
 
  [Boletín 10](https://github.com/DanielRTato/Programacion/tree/main/Boletin_10)
 
-### Proyectos
 
-1. **Proyecto 1**: [Sistema de gestión de bibliotecas](https://github.com/DanielRTato/Programacion/tree/main/proyectos/gestion_bibliotecas): Un sistema para gestionar el préstamo y devolución de libros en una biblioteca.
-2. **Proyecto 2**: [Aplicación de gestión de tareas](https://github.com/DanielRTato/Programacion/tree/main/proyectos/gestion_tareas): Una aplicación para crear, editar y eliminar tareas diarias.
-3. **Proyecto 3**: [Juego de la vida de Conway](https://github.com/DanielRTato/Programacion/tree/main/proyectos/juego_vida): Una implementación del famoso juego de simulación de autómatas celulares.
-4. **Proyecto 4**: [Sistema de reservas de hoteles](https://github.com/DanielRTato/Programacion/tree/main/proyectos/reservas_hoteles): Un sistema para gestionar las reservas y disponibilidad de habitaciones en un hotel.
+### Otros Contenidos
 
-
-
+1. **POO**: [Programación Orientada a Objetos](https://github.com/DanielRTato/Programacion/tree/main/POO): Ejercicios y ejemplos relacionados con la programación orientada a objetos.
+2. **PracticaPOO**: [Prácticas de POO](https://github.com/DanielRTato/Programacion/tree/main/PracticaPOO): Prácticas y proyectos pequeños para reforzar conceptos de POO.
+3. **Strings**: [Manipulación de Cadenas](https://github.com/DanielRTato/Programacion/tree/main/Strings): Ejercicios y ejemplos sobre cómo manipular cadenas de texto en Java.
+4. **Testing**: [Pruebas y Testing](https://github.com/DanielRTato/Programacion/tree/main/Testing): Ejemplos y prácticas de pruebas unitarias y de integración.
+5. **Examen5-2**: [Examen 5-2](https://github.com/DanielRTato/Programacion/tree/main/examen5-2): Código y soluciones del examen 5-2.
+6. **Figuras**: [Figuras Geométricas](https://github.com/DanielRTato/Programacion/tree/main/figuras): Ejemplos y ejercicios relacionados con figuras geométricas.
