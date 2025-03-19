@@ -5,7 +5,6 @@ Boletines y proyectos de programación.
 ## Contenido
 
 - [Boletines](#boletines)
-- [Proyectos](./proyectos): Proyectos de programación desarrollados durante el curso.
 -  [Otros Contenidos](#otros-contenidos)
 
 ### Boletines
