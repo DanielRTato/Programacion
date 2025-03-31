@@ -1,4 +1,4 @@
-package Listas;
+/*package Listas;
 
 public class ImplementaLifo extends Lista2 implements  Lifo{
 
@@ -17,3 +17,4 @@ public class ImplementaLifo extends Lista2 implements  Lifo{
         return nodo;
     }
 }
+*/
