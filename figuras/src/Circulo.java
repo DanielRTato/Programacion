@@ -2,7 +2,7 @@
 
     private double radio;
 
-    public Circulo (double x, double y, double r){
+    public Circulo (double x, double y, double r) throws ExcepcionPuntoForaPrimeiroCadrante {
         super (x, y);
         radio = r;
     }

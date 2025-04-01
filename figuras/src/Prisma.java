@@ -2,7 +2,7 @@
     private double altura;
     private double base;
 
-    public Prisma(double x, double y, double altura, double base){
+    public Prisma(double x, double y, double altura, double base) throws ExcepcionPuntoForaPrimeiroCadrante {
         super(x, y);
         this.altura = altura;
         this.base = base;

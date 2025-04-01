@@ -7,32 +7,32 @@
         y = 0;
     }
 
-    public Punto (double w){
+    public Punto (double w)throws    ExcepcionPuntoForaPrimeiroCadrante{
         setX(w);
         setY(w);
     }
 
-    public Punto (int w){
+    public Punto (int w)throws ExcepcionPuntoForaPrimeiroCadrante{
         setX(w);
         setY(w);
     }
 
-    public Punto (double x, double  y){
+    public Punto (double x, double  y)throws ExcepcionPuntoForaPrimeiroCadrante{
        setX(x);
        setY(y);
     }
 
-    public void setX (double x){
+    public void setX (double x) throws ExcepcionPuntoForaPrimeiroCadrante{
         if (x>=0) this.x = x;
-        else throw new RuntimeException("Tienen que ser positivos");
+        else throw new ExcepcionPuntoForaPrimeiroCadrante();
     }
     public double getX(){
         return x;
     }
 
-    public void setY (double y){
-        if (y>=0) this.y = y;
-        else throw new RuntimeException("Tienen que ser positivos");
+    public void setY (double y) throws ExcepcionPuntoForaPrimeiroCadrante{
+        if (y >= 0) this.y = y;
+        else throw new ExcepcionPuntoForaPrimeiroCadrante();
     }
     public double getY(){
         return y;

@@ -1,7 +1,7 @@
  public class Cilindro extends Circulo{
 
     private double altura;
-    public Cilindro(double x, double y, double r, double altura) {
+    public Cilindro(double x, double y, double r, double altura) throws ExcepcionPuntoForaPrimeiroCadrante {
         super(x, y, r);
         this.altura=altura;
     }
