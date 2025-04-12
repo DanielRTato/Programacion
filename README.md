@@ -1,6 +1,6 @@
 # Programación
 
-Boletines y proyectos de programación.º
+Boletines y proyectos de programación.
 
 ## Contenido
 
