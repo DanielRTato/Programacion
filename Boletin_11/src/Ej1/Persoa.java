@@ -6,7 +6,7 @@ public class Persoa {
     private String direccion;
     private String dni;
 
-    public Persoa(String nome, String direccion, String dni) {
+    public Persoa(String nome, String direccion, String dni) throws DniNonValido {
         this.nome = nome;
         this.direccion = direccion;
         setDni(dni);
@@ -32,19 +32,17 @@ public class Persoa {
         return dni;
     }
 
-    public void setDni(String dni) {
+    public void setDni(String dni) throws DniNonValido {
         char letraNif[] = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
 
         if (dni.length() == 9 && Character.isLetter(dni.charAt(8))) {
-            try {
+
                 int numero = Integer.parseInt(dni.substring(0, 8));
                 char letra = dni.charAt(8);
                 if (letra == letraNif[numero % 23]) {
                     this.dni = dni;
                 }
-            } catch (NumberFormatException e) {
-                System.out.println("Dni invalido");
-            }
+
         }
     }
 }

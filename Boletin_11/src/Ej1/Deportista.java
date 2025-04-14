@@ -1,15 +1,17 @@
 package Ej1;
 
-public class Deportista {
+public class Deportista extends Persoa {
     private String deporte;
     private String clube;
     private String licencia;
 
-    public Deportista(String deporte, String clube, String licencia) {
+    public Deportista(String deporte, String clube, String licencia,String nome, String direccion, String dni) throws DniNonValido {
+        super(nome,direccion,dni);
         this.deporte = deporte;
         this.clube = clube;
         setLicencia(licencia);
     }
+
 
     public String getDeporte() {
         return deporte;
