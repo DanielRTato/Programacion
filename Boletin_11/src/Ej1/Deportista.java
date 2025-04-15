@@ -5,11 +5,11 @@ public class Deportista extends Persoa {
     private String clube;
     private String licencia;
 
-    public Deportista(String deporte, String clube, String licencia,String nome, String direccion, String dni) throws DniNonValido {
+    public Deportista(String deporte, String clube, String licencia,String nome, String direccion, String dni) throws DniNonValido, LicenciaNonValida {
         super(nome,direccion,dni);
         this.deporte = deporte;
         this.clube = clube;
-        setLicencia(licencia);
+        setLicenza(licencia);
     }
 
 
@@ -33,16 +33,11 @@ public class Deportista extends Persoa {
         return licencia;
     }
 
-    public void setLicencia(String licencia) {
-        if (licencia != null
-                && licencia.length() == 13
-                && licencia.substring(0, 4).matches("\\d{4}")
-                && licencia.substring(4, 7).matches("[a-zA-Z]{3}")
-                && licencia.substring(7).matches("\\d{6}")) {
-            System.out.println("Licencia correcta");
-            this.licencia = licencia;
-        } else {
-            System.out.println("Licencia no valida");
+    public void setLicenza(String licenza) throws LicenciaNonValida {
+        if (!licenza.matches("\\d{4}[a-zA-Z]{3}\\d{6}")) { // Validar formato de licencia
+            throw new LicenciaNonValida("Licenza introducida no válida: " + licenza);
         }
+        this.licencia = licenza;
     }
 }
+

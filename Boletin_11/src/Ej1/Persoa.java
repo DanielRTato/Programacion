@@ -32,6 +32,7 @@ public class Persoa {
         return dni;
     }
 
+   /*
     public void setDni(String dni) throws DniNonValido {
         char letraNif[] = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
 
@@ -44,5 +45,14 @@ public class Persoa {
                 }
 
         }
+    }
+    */
+
+    public void setDni(String dni) throws DniNonValido {
+        if (!dni.matches("\\d{8}[A-Z]")) { // [A-HJ-NP-TV-Z] creo que excluye las letras Y Ñ U
+            throw new DniNonValido("DNI introducido no válido: " + dni);
+        }
+        this.dni = dni;
+
     }
 }

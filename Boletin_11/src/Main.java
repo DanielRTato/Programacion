@@ -1,5 +1,6 @@
 import Ej1.Deportista;
 import Ej1.DniNonValido;
+import Ej1.LicenciaNonValida;
 import Ej1.Persoa;
 
 public class Main {
@@ -7,11 +8,12 @@ public class Main {
 
 
         try {
-            Deportista Juan = new Deportista("Baloncesto", "Celta", "1234bal123456", "Juan", "Calle sdfd", "123R");
-            Persoa Alex = new Persoa("Alez", "dsfsdf" , "123134");
-
-    }catch (DniNonValido e){
-            System.out.println("Error con el dni" + e.getMessage());
+            // Crear objetos y probar las validaciones
+            Deportista deportista = new Deportista("Carlos", "Baloncesto", "1234bal12345", "Juan", "Calle asdf","12345678A");
+            System.out.println("Nombre: " + deportista.getNome());
+            System.out.println("DNI: " + deportista.getDni());
+            System.out.println("Licencia: " + deportista.getLicencia());
+        } catch (DniNonValido | LicenciaNonValida e) {
+            System.out.println(e.getMessage());
         }
-    }
 }
