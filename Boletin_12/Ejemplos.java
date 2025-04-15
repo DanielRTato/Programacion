@@ -54,6 +54,8 @@ public class Ejemplos {
             System.out.println("Writeable: " + archivo.canWrite());
             System.out.println("Readable " + archivo.canRead());
             System.out.println("Tamaño en  bytes " + archivo.length());
+        }else {
+            System.out.println("No existe el archivo");
         }
 
     }
