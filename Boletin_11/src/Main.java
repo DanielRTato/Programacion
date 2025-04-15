@@ -8,8 +8,8 @@ public class Main {
 
 
         try {
-            // Crear objetos y probar las validaciones
-            Deportista deportista = new Deportista("Carlos", "Baloncesto", "1234bal12345", "Juan", "Calle asdf", "12345678A");
+
+            Deportista deportista = new Deportista("Carlos", "Baloncesto", "1234bal123456", "Juan", "Calle asdf", "12345678A");
             System.out.println("Nombre: " + deportista.getNome());
             System.out.println("DNI: " + deportista.getDni());
             System.out.println("Licencia: " + deportista.getLicencia());
