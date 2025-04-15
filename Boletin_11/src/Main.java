@@ -1,11 +1,18 @@
 import Ej1.Deportista;
 import Ej1.DniNonValido;
 import Ej1.LicenciaNonValida;
-import Ej1.Persoa;
 
 public class Main {
-    public static void main(String[] args) {
+   public static void setAge(int age) {
+        if (age < 18) {
+            throw new ArithmeticException("Access denied - You must be at least 18 years old.");
+        }
+        else {
+            System.out.println("Access granted - You are old enough!");
+        }
+    }
 
+    public static void main(String[] args) {
 
         try {
 
@@ -16,5 +23,7 @@ public class Main {
         } catch (DniNonValido | LicenciaNonValida e) {
             System.out.println(e.getMessage());
         }
+
+        setAge(17);
     }
 }
