@@ -1,6 +1,6 @@
 package Ej1;
 
-import java.io.Serializable;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -46,6 +46,28 @@ public class Cliente implements Serializable {
         this.id = id;
     }
 
+    public static void guardarDatos () {
+        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(archivo))) {
+            out.writeObject(clientes);
+        } catch (IOException e) {
+            System.out.println("Erro ao gardar os datos: " + e.getMessage());
+        }
+    }
+
+    public static void cargarDatos() {
+        File ficheiro = new File(archivo);
+        if (ficheiro.exists()) {
+            try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(archivo))) {
+                clientes = (List<Cliente>) in.readObject();
+                System.out.println("Datos cargados correctamente.");
+            } catch (IOException | ClassNotFoundException e) {
+                System.out.println("Erro ao cargar os datos: " + e.getMessage());
+            }
+        } else {
+            System.out.println("Comezando con lista baleira.");
+        }
+    }
+
     public static void  engadirCliente (Scanner teclado) {
         System.out.println("Introduce el id");
         String id = teclado.nextLine();
@@ -58,6 +80,12 @@ public class Cliente implements Serializable {
 
         clientes.add(new Cliente(id,nombre,numero));
         System.out.println("Cliente añadido");
+    }
+
+    public static void mostrarCliente () {
+        for (Cliente c : clientes){
+            System.out.println(c);
+        }
     }
 
 
