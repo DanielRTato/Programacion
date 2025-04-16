@@ -9,7 +9,8 @@ public class App {
         int opcion;
 
         do {
-            System.out.println("1- ");
+            System.out.println("ELIGE UNA OPCION");
+            System.out.println("1- Engadir novo cliente");
             System.out.println("2- ");
             System.out.println("3- ");
             System.out.println("4- ");
@@ -17,10 +18,10 @@ public class App {
             opcion = teclado.nextInt();
 
             switch (opcion){
-                case 1 ->
-                case 2 ->
-                case 3 ->
-                case 4 ->
+                case 1 -> Cliente.engadirCliente(teclado);
+//                case 2 ->
+//                case 3 ->
+//                case 4 ->
                 default -> System.out.println("Opcion no valida");
             }
         } while (opcion != 0);

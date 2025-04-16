@@ -1,9 +1,20 @@
 package Ej1;
 
-public class Cliente {
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Cliente implements Serializable {
     private String id;
     private String nome;
     private int telefono;
+    private static final String archivo  = "nombre.txt";
+    private static List<Cliente> clientes = new ArrayList<>();
+
+    public static void main(String[] args) {
+
+    }
 
     public Cliente (String id, String nome, int telefono) {
         this.id = id;
@@ -35,8 +46,20 @@ public class Cliente {
         this.id = id;
     }
 
-    public void listarClientes(){
+    public static void  engadirCliente (Scanner teclado) {
+        System.out.println("Introduce el id");
+        String id = teclado.nextLine();
+        teclado.nextLine();
+        System.out.println("Introduce el nombre");
+        String nombre = teclado.nextLine();
+        teclado.nextLine();
+        System.out.println("Introduce el número de teléfono");
+        int numero = teclado.nextInt();
 
+        clientes.add(new Cliente(id,nombre,numero));
+        System.out.println("Cliente añadido");
     }
+
+
 
 }
