@@ -8,6 +8,7 @@ public class Ejemplos {
     public static void main(String[] args) {
 
         File archivo = new File("nombre.txt");
+
         // Crear un archivo
         try {
 
