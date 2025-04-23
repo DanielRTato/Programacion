@@ -9,7 +9,7 @@ public class ContadorElementos <T> implements Pila<T>{
     }
 
     public void apilar(T novo) {
-        obxectos = Arrays.copyOf(obxectos,obxectos.length);
+        obxectos = Arrays.copyOf(obxectos,obxectos.length +1);
             obxectos[obxectos.length -1] = novo;
 
     }
@@ -20,6 +20,7 @@ public class ContadorElementos <T> implements Pila<T>{
             res = obxectos[obxectos.length-1];
             obxectos = Arrays.copyOf(obxectos,obxectos.length-1);
         }
+        return res;
     }
 
 

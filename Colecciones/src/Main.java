@@ -19,6 +19,11 @@ public class Main {
         temp[4]= 1.33;
 
         ContadorElementos<Double> t = new ContadorElementos<>(temp);
+        t.apilar(2.25);
+        t.apilar(33.33);
+
+        System.out.println(t.desapilar());
+        System.out.println(t.desapilar());
 
 
 
