@@ -12,7 +12,7 @@ public class juntarArrays <T> {
         this.array2 = array2;
     }
 
-    public T[] concatenarManual() {
+    public T[] concatenar() {
         T[] resultado = Arrays.copyOf(array1, array1.length + array2.length);
         for (int i = 0; i < array2.length; i++) {
             resultado[array1.length + i] = array2[i];
