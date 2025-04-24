@@ -29,5 +29,6 @@ public class App {
         String resultadoPalabras[] = juntarPalabras.concatenar();
         System.out.println(Arrays.toString(resultadoPalabras));
 
+
     }
 }
