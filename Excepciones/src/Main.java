@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    static void peditDatos() throws InputMismatchException {
+    static void peditDatos() throws InputMismatchException { // Podria camputar Expection si no sé cual es la concreta
         try {
         Scanner teclado = new Scanner(System.in);
 
