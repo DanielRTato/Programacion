@@ -3,7 +3,15 @@ import java.io.File;
 public class Main {
     public static void main(String[] args) {
 
-        File archivo = new File("Desktop/archivo.txt");
+        File fichero = new File("ejemplo1.txt");
+
+        if (fichero.exists()) System.out.println("El fichero existe");
+        else System.out.println("El fichero no existe");
+
+        System.out.println("Nombre: " + fichero.getName());
+        System.out.println("Longitud: " + fichero.length());
+        System.out.println("Ruta absoluta: "+ fichero.getAbsolutePath());
+
 
     }
 }
