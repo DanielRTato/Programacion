@@ -1,10 +1,10 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
+public class InputMismarch {
 
     static void peditDatos() throws InputMismatchException { // Podria camputar Expection si no sé cual es la concreta
-        try {
+        // try {
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("Introduce tu nombre");
@@ -13,11 +13,11 @@ public class Main {
         System.out.println("Introduce tu edad");
         int edad = teclado.nextInt();
 
-        System.out.println("Hola " + nombreUsuario + " . El año que viene tendrás " + (edad+1) + " años.");
-            }catch (InputMismatchException e){
-            System.out.println("Edad no valida");
-        }
+        System.out.println("Hola " + nombreUsuario + " . El año que viene tendrás " + (edad + 1) + " años.");
+        // }catch (InputMismatchException e){
+        //System.out.println("Edad no valida");
     }
+
 
     public static void main(String[] args) {
 
@@ -30,17 +30,22 @@ public class Main {
             System.out.println("2. Salir del programa");
             opcion = teclado.nextInt();
 
-            if (opcion==1) {
-                peditDatos();
-            } else if (opcion !=2) {
+            if (opcion == 1) {
+                try {
+                    peditDatos();
+                } catch (InputMismatchException e) {
+                    System.out.println("El valor introducido no es valido");
+                }
+            } else if (opcion != 2) {
                 System.out.println("Opcion no valida");
 
             }
         }
-        while (opcion != 2); {
+        while (opcion != 2);
+        {
             System.out.println("Saliendo del programa...");
 
 
-
         }
-}}
+    }
+}
