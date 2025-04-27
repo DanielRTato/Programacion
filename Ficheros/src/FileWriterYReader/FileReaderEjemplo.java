@@ -15,7 +15,7 @@ public class FileReaderEjemplo {
             int caracter;
             System.out.println("Contenido del archivo " + fichero + ": ");
             while ((caracter = fileReader.read()) != -1){
-                System.out.print((char) caracter);  //Uso print no println
+                System.out.print((char) caracter);  //Uso print no println y si borrar el (char) mostraria el valor del caracter UNicode
             }
             fileReader.close();
         }catch (IOException e){
