@@ -11,7 +11,7 @@ public class FileWriterEjemplo {
 
         try {
             // Creamos un objeto FileWriter
-            FileWriter fileWriter = new FileWriter(fichero,true); // con el append depende de si es true op false piso el contenido o lo añado
+            FileWriter fileWriter = new FileWriter(fichero,false); // con el append depende de si es true op false piso el contenido o lo añado
 
             // Escribimos el String en el archivo
             fileWriter.write(texto);
