@@ -15,11 +15,11 @@ public class FileReaderEjemplo {
             int caracter;
             System.out.println("Contenido del archivo " + fichero + ": ");
             while ((caracter = fileReader.read()) != -1){
-                System.out.println((char) caracter);
+                System.out.print((char) caracter);  //Uso print no println
             }
             fileReader.close();
         }catch (IOException e){
-            System.out.println("Error al leer el archivo");
+            System.out.println("Error al leer el archivo" + e.getMessage());
             e.printStackTrace();
         }
 
