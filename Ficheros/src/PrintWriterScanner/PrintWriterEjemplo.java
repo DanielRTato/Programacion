@@ -1,4 +1,4 @@
-package PrintWriter;
+package PrintWriterScanner;
 
 import java.io.*;
 import java.util.Arrays;
