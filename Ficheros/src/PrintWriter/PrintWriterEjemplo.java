@@ -8,7 +8,7 @@ public class PrintWriterEjemplo {
 
         String fichero = "ejemplo.txt";
         try {
-            PrintWriter pw = new PrintWriter(new FileWriter(fichero));
+            PrintWriter pw = new PrintWriter(new FileWriter(fichero,true));
             pw.print("Esto es un texto sin salto de línea");
             pw.println("Nueva palabra");
             pw.println("Esto es un texto con salto de línea");
