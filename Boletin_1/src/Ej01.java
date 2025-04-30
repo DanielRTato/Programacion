@@ -1,4 +1,4 @@
-public class Ej1 {
+public class Ej01 {
     public static void main(String[] args) {
 
         double resultado1 = ((3 + 2) % 2 - 15) / 2.0 * 5;

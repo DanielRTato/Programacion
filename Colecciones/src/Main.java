@@ -8,7 +8,9 @@ public class Main {
         System.out.println(num.extraer());
 
         Contedor<String> cad = new Contedor<String>();
+        Contedor<?> contedorParaCalquerTipo = new Contedor<>();
         cad.gardar("Hola");
+        contedorParaCalquerTipo = new Contedor<Double>();
         System.out.println(cad.extraer());
 
         Double [] temp = new Double[5];
