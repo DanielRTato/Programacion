@@ -1,15 +1,13 @@
 package Buffered;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
 
 public class EjercicioBufferdReader {
     public static void main(String[] args) {
 
         String archivo = "nombre.txt";
 
+        contarPalabras("nombre.txt");
     }
 
     public static int contarPalabras(String nombreFichero) {
@@ -17,14 +15,18 @@ public class EjercicioBufferdReader {
         int contadorPalabras = 0;
         try {
             FileReader fr = new FileReader(nombreFichero);
-            BufferedReader fw = new BufferedReader(fr);
+            BufferedReader br = new BufferedReader(fr);
+            String linea;
 
-            while (fw.ready()) {
-
+            while (( linea= br.readLine()) != null ) {
+                String []  palabrasLinea = linea.split("\\s+");
+                contadorPalabras += palabrasLinea.length;
             }
+            br.close();
+            System.out.println(nombreFichero + " contiene " + contadorPalabras + " palabras");
 
 
-        } catch (FileNotFoundException e) {
+        } catch (IOException e) {
             System.out.println("Error al buscar el archivo");
             e.printStackTrace();
         }
