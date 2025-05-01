@@ -1,6 +1,8 @@
 package Buffered;
 
 import java.io.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class EjercicioBufferdReader {
     public static void main(String[] args) {
@@ -14,15 +16,12 @@ public class EjercicioBufferdReader {
 
         int contadorPalabras = 0;
         try {
-            FileReader fr = new FileReader(nombreFichero);
-            BufferedReader br = new BufferedReader(fr);
-            String linea;
+            Scanner scn = new Scanner(new BufferedReader(new FileReader(nombreFichero)));
 
-            while (( linea= br.readLine()) != null ) {
-                String []  palabrasLinea = linea.split("\\s+");
-                contadorPalabras += palabrasLinea.length;
+            while (scn.hasNextLine()) {
+                contadorPalabras += Arrays.stream(scn.nextLine().split("\\s+")).count();
             }
-            br.close();
+            scn.close();
             System.out.println(nombreFichero + " contiene " + contadorPalabras + " palabras");
 
 
