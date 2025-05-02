@@ -9,26 +9,35 @@ import java.io.File;
 public class contenidoCarpeta {
     public static void main(String[] args) {
 
-        listaContenido("carpeta",".txt");
+        listaContenido(".",".txt"); //el punto quiere decir la carpeta actual
     }
 
+    /**
+     *
+     * @param carpeta la carpteta donde buscar
+     * @param tipo la extensión que buscas
+     */
     public static void  listaContenido(String carpeta, String tipo) {
         File directorio = new File(carpeta);
-        System.out.println(directorio.exists());
 
-        if (carpeta.isEmpty()) {
-            System.out.println("La carpeta no contiene nungun archivo " + tipo);
-        }else {
-            File [] archivos = directorio.listFiles();
-            for (File f: archivos) {
-                if (f.isFile() && f.getName().contains("txt")){
-                    System.out.println(f);
-                }
+        if (!directorio.exists() || !directorio.isDirectory()) {
+            System.out.println("La carpeta especificada no existe o no es un directorio");
+        }
+
+        File[] archivos = directorio.listFiles();
+        if (archivos == null || archivos.length == 0) {
+            System.out.println("La carpeta no contiene ningún archivo con la extensión " + tipo);
+        }
+
+        for (File f : archivos) {
+            if (f.isFile() && f.getName().endsWith(tipo)) {
+                System.out.println(f);
             }
         }
     }
-
-
-
-
 }
+
+
+
+
+
