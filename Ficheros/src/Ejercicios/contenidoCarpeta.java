@@ -17,6 +17,26 @@ public class contenidoCarpeta {
      * @param carpeta la carpteta donde buscar
      * @param tipo la extensión que buscas
      */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public static void  listaContenido(String carpeta, String tipo) {
         File directorio = new File(carpeta);
 
