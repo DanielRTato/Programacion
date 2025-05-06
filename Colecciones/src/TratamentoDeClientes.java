@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.TreeSet;
 
 public class TratamentoDeClientes {
     public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class TratamentoDeClientes {
         coleccionCliente.add(new Cliente("98765432T","Alex","10/12/2008"));
         coleccionCliente.add(new Cliente("24681234Z","Maria","01/07/2020"));
         Cliente unCliente = new Cliente("5432442423Y", "Dani", "02/12/1996");
-
+/*
         System.out.println(coleccionCliente.contains(unCliente));
         System.out.println(coleccionCliente.size());
         coleccionCliente.add(unCliente);
@@ -32,10 +33,12 @@ public class TratamentoDeClientes {
             System.out.println(cli);
         }
 
-
-
-
-
+*/
+        TreeSet<Cliente> conxuntoClientes = new TreeSet<>();
+        conxuntoClientes.add(new Cliente("12345678X","Juan","23/05/1996"));
+        conxuntoClientes.add(new Cliente("12345678Z","Alex","12/10/2015"));
+        conxuntoClientes.add(new Cliente("12345678Y","Daniel","23/05/2030"));
+        System.out.println(conxuntoClientes);
 
     }
 }
