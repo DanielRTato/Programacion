@@ -33,7 +33,12 @@ public class Cliente implements Comparable<Cliente> {
         return 0;
         }
 
-
-
-
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "dni='" + dni + '\'' +
+                ", nome='" + nome + '\'' +
+                ", dataNacemento=" + dataNacemento +
+                '}';
     }
+}
