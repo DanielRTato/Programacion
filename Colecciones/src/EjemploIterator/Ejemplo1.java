@@ -21,5 +21,21 @@ public class Ejemplo1 {
         }
 
 
+        ArrayList<String> clientes = new ArrayList<String>();
+        clientes.add("Pepe García");
+        clientes.add("Toni Pérez");
+        clientes.add("Marta Gómez");
+        clientes.add("Sara Martínez");
+
+        Iterator<String> clienteIterator = clientes.iterator();
+        while (clienteIterator.hasNext()){
+            String cliente = clienteIterator.next();
+            if (cliente.equals("Toni Pérez")) clienteIterator.remove();
+            System.out.println(cliente);
+        }
+        System.out.println(clientes);
+
+
+
     }
 }
