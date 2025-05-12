@@ -19,8 +19,24 @@ public class Grupo implements Iterable <Alumno>{
 
     @Override
     public Iterator<Alumno> iterator() {
-        return alumnos.iterator();
+        return new IteratorGrupo();
     }
+
+    private class IteratorGrupo implements Iterator<Alumno> {
+        private int posicion = 0;
+
+        @Override
+        public boolean hasNext() {
+            return posicion < alumnos.size();
+        }
+
+        @Override
+        public Alumno next() {
+            return alumnos.get(posicion++);
+        }
+    }
+
+
 
     public String getNombre() {
         return nombre;

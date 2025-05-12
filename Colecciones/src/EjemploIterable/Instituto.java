@@ -1,5 +1,7 @@
 package EjemploIterable;
 
+import java.util.Iterator;
+
 public class Instituto {
     public static void main(String[] args) {
 
@@ -12,6 +14,12 @@ public class Instituto {
         dam.agregarAlumno(new Alumno("Carlos","66666F", 20));
         dam.agregarAlumno(new Alumno("Elena","77777G", 21));
 
+
+        Iterator<Alumno> iteradorGrupo = dam.iterator();
+
+        while  (iteradorGrupo.hasNext()){
+            System.out.println(iteradorGrupo.next());
+        }
 
 
     }
