@@ -15,6 +15,6 @@ public class EjemploColecciones {
         coleccionCliente.add(unCliente);
         System.out.println(coleccionCliente);
 
-        Collections.sort(coleccionCliente);
+        // Collections.sort(coleccionCliente);
     }
 }
