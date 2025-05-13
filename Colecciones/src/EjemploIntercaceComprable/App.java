@@ -14,10 +14,10 @@ public class App {
         alumnoss.add(new Alumno("María", "55555E", 19));
         alumnoss.add(new Alumno("Carlos", "66666F", 20));
         alumnoss.add(new Alumno("Elena", "77777G", 21));
-        alumnoss.add(new Alumno("WE", null, 21));
-        alumnoss.add(new Alumno("AS", null, 1));
+
 
         Collections.sort(alumnoss);
+        System.out.println(alumnoss);
 
 
     }
