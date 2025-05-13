@@ -14,6 +14,8 @@ public class Instituto {
         dam.agregarAlumno(new Alumno("Carlos","66666F", 20));
         dam.agregarAlumno(new Alumno("Elena","77777G", 21));
         dam.agregarAlumno(new Alumno("WE",null, 21));
+        dam.agregarAlumno(new Alumno("AS",null,1));
+
 
 
 
