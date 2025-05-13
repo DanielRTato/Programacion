@@ -5,6 +5,7 @@ import java.util.Iterator;
 
 /**
  * Configurar el método next() para que deveulva alumnos que tengan NIA
+ *
  */
 public class Grupo implements Iterable <Alumno>{
 
@@ -40,6 +41,15 @@ public class Grupo implements Iterable <Alumno>{
         public Alumno next() {
                 return alumnos.get(posicion++);
 
+        }
+    }
+
+    public void borrarPorEdad(int e) {
+        Iterator<Alumno> iteradorGrupo = alumnos.iterator();
+        while (iteradorGrupo.hasNext()){
+            if (iteradorGrupo.next().getEdad()< e){
+                iteradorGrupo.remove();
+            }
         }
     }
 

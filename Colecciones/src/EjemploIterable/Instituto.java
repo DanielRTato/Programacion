@@ -18,6 +18,7 @@ public class Instituto {
 
 
         Iterator<Alumno> iteradorGrupo = dam.iterator();
+        dam.borrarPorEdad(17);
 
         while  (iteradorGrupo.hasNext()){
             System.out.println(iteradorGrupo.next());
