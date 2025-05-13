@@ -3,6 +3,9 @@ package EjemploIterable;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/**
+ * Configurar el método next() para que deveulva alumnos que tengan NIA
+ */
 public class Grupo implements Iterable <Alumno>{
 
     private String nombre;
@@ -27,12 +30,16 @@ public class Grupo implements Iterable <Alumno>{
 
         @Override
         public boolean hasNext() {
+            while (posicion < alumnos.size() && alumnos.get(posicion).getNia() == null){
+                posicion++;
+            }
             return posicion < alumnos.size();
         }
 
         @Override
         public Alumno next() {
-            return alumnos.get(posicion++);
+                return alumnos.get(posicion++);
+
         }
     }
 
