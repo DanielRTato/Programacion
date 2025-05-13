@@ -42,4 +42,13 @@ public class Alumno  implements Comparable<Alumno>{
         if (comparacion== 0) comparacion = this.nombre.compareTo(a.nombre);
         return comparacion;
     }
+
+    @Override
+    public String toString() {
+        return "Alumno{" +
+                "nombre='" + nombre + '\'' +
+                ", nia='" + nia + '\'' +
+                ", edad=" + edad +
+                '}';
+    }
 }
