@@ -1,6 +1,6 @@
 package EjemploIntercaceComprable;
 
-public class Alumno implements Comparable<Alumno>{
+public class Alumno  implements Comparable<Alumno>{
 
     private String nombre;
     private String nia;
@@ -35,8 +35,6 @@ public class Alumno implements Comparable<Alumno>{
     public void setEdad(int edad) {
         this.edad = edad;
     }
-
-
 
     @Override
     public int compareTo(Alumno a) {
