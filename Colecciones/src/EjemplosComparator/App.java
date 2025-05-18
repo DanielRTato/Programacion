@@ -17,12 +17,12 @@ public class App {
 
 
         Collections.sort(alumnos, new AlumnoPorEdadComparator());
-        System.out.println("Alumnnos ordenador por edad");
+        System.out.println("Alumnnos ordenados por edad:");
         System.out.println(alumnos);
 
 
         Collections.sort(alumnos, new AlumnoPorNiaComparator());
-        System.out.println("Alumnos ordenador por Nia");
+        System.out.println("Alumnos ordenados por Nia:");
         System.out.println(alumnos);
 
 
