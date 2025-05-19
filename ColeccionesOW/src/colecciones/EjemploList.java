@@ -52,12 +52,40 @@ public class EjemploList {
         pos = lista3.lastIndexOf(1); // Buscamos la última posición del elemento 1 en la lista si no lo encuentra, devuelve -1
         System.out.println("La ultima posicion: " + pos);
 
-        // Ejempos de cotener
+        // Ejempos de contains
         boolean contains = lista3.contains(5); // Comprobamos si la lista contiene el elemento 5
         System.out.println(contains);
         contains = lista3.containsAll(List.of(5,6,7)); // Comprobamos si la lista contiene todos los elementos de la lista de entrada
         System.out.println(contains);
 
+        // Ejemplos de borrar
+         /*
+        lista3.clear(); // Eliminamos todos los elementos de la lista
+        boolean empty = lista3.isEmpty(); // Comprobamos si la lista está vacía
+        System.out.println(empty);
+        */
+
+        // Ejemplo de modificar una posicion y borrar varios elementos
+        lista3.set(0, 12345);
+        System.out.println(lista3);
+        lista3.removeAll(List.of(1,2,3,4));
+        System.out.println(lista3);
+
+        // Ejemplo de sublistas si modificas la lista original deberías tener en cuenta que también se modificarán las sublistas
+        System.out.println("---------------------");
+        List<Integer> sublista3 = lista3.subList(0, 3); // Creamos una sublista desde la posición 0 hasta la posición 2
+        System.out.println(sublista3);
+        lista3.set(0, 99);
+        System.out.println(lista3);
+        System.out.println(sublista3);
+        sublista3.add(00);
+        System.out.println(lista3);
+        System.out.println(sublista3);
+
+        // Convertir la lista en array
+        String [] array = new String[lista3.size()];
+        array = lista.toArray(array);
+        System.out.println(Arrays.toString(array));
 
     }
 
