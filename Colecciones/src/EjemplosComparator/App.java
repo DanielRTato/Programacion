@@ -17,7 +17,7 @@ public class App {
 
 
         Collections.sort(alumnos, new AlumnoPorEdadComparator());
-        System.out.println("Alumnnos ordenados por edad:");
+        System.out.println("Alumnnos ordenados por edad: ");
         System.out.println(alumnos);
 
 
