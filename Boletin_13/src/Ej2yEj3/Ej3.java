@@ -1,16 +1,15 @@
-package Ej2;
+package Ej2yEj3;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
 /**
- * Codificar unha aplicación onde se insertan 100 números enteiros aleatorios
- * entre 1 e 10 (ámbolos dous incluidos), poidendo estár repetidos, nunha
- * colección. Despois elimínanse tódolos elementos que valen 5 e 7. Mostrar a
- * colección antes e despois
+ * Repite o programa do exercicio 2, usando un interador para eliminar os
+ * elementos
  */
-public class EliminarNumeros {
+public class Ej3 {
     public static void main(String[] args) {
 
         List<Integer> lista = new ArrayList<>();
@@ -22,13 +21,17 @@ public class EliminarNumeros {
         }
         System.out.println(lista);
 
-        for (int i = 0; i<lista.size(); i++) {
-            int borrar = lista.get(i);
-            if (borrar==5 || borrar==7) {
-                lista.remove(i);
+        Iterator<Integer> it = lista.iterator();
+        while (it.hasNext()) {
+            int borrar = it.next();
+            if (borrar ==5 || borrar == 7) {
+                it.remove();
             }
         }
         System.out.println(lista);
 
+
     }
 }
+
+
