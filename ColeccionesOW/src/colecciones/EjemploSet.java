@@ -14,21 +14,21 @@ public class EjemploSet {
 
         // HashSet es una implementación de Set que utiliza un mapa de objetos para almacenar los elementos.
         // No está ordenada
-        Set<Alumno> set2 = new HashSet<>();
-        set2.add(new Alumno("123456", "María" , "Perez García"));
-        set2.add(new Alumno("234567", "Juan" , "Ropa Muñoz"));
-        set2.add(new Alumno("345678", "Jualia" , "Martínez Luján"));
-        set2.add(new Alumno("345678", "Jualia" , "Martínez Luján")); //Repetido así que no lo inserte
+        Set<AlumnoEnum> set2 = new HashSet<>();
+        set2.add(new AlumnoEnum("123456", "María" , "Perez García"));
+        set2.add(new AlumnoEnum("234567", "Juan" , "Ropa Muñoz"));
+        set2.add(new AlumnoEnum("345678", "Jualia" , "Martínez Luján"));
+        set2.add(new AlumnoEnum("345678", "Jualia" , "Martínez Luján")); //Repetido así que no lo inserte
 
-        for (Alumno a : set2) {
+        for (AlumnoEnum a : set2) {
             System.out.println(a);
         }
 
         System.out.println("---------------------------------------");
         // LinkedHashSet es una implementación de Set que mantiene el orden de inserción de los elementos.
-        Set<Alumno> set3 = new LinkedHashSet<>(set2);
-        set3.add(new Alumno("987654", "Pedro" , "García Rodríguez"));
-        for (Alumno a : set3) {
+        Set<AlumnoEnum> set3 = new LinkedHashSet<>(set2);
+        set3.add(new AlumnoEnum("987654", "Pedro" , "García Rodríguez"));
+        for (AlumnoEnum a : set3) {
             System.out.println(a);
         }
 
