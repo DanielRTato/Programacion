@@ -1,8 +1,6 @@
 package colecciones;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Random;
+import java.util.*;
 
 public class EjemploOrdenacion {
     public static void main(String[] args) {
@@ -22,6 +20,25 @@ public class EjemploOrdenacion {
         }
         Arrays.sort(intArray2, Comparator.reverseOrder());
         System.out.println(Arrays.toString(intArray2));
+        System.out.println();
 
+        Alumno a1 = new Alumno(123, "Juan", "Zerez", 8.5, 20);
+        Alumno a2 = new Alumno(234, "Maria", "Garcia", 9.0, 21);
+        Alumno a3 = new Alumno(345, "Pedro", "Martinez", 8.7, 20);
+
+        List<Alumno> lista = new ArrayList<>(List.of(a1, a2, a3));
+        Collections.sort(lista);
+        System.out.println(lista);
+
+        Collections.sort(lista, new ComparatorPorNotaDescendente());
+        System.out.println(lista);
+
+        Set<Integer> setSinOrden = Set.of(1,3,6,2,7);
+        Set<Integer> setOrdenado = new TreeSet<>(setSinOrden);
+        System.out.println(setOrdenado);
+
+        Set<Integer> setConOtroOrden = new TreeSet<>(Comparator.reverseOrder());
+        setConOtroOrden.addAll(setSinOrden);
+        System.out.println(setConOtroOrden);
     }
 }
