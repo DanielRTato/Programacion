@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * Codificar unha aplicación onde se insertan 100 números enteiros aleatorios
+ * entre 1 e 10 (ámbolos dous incluidos), poidendo estár repetidos, nunha
+ * colección. Despois elimínanse tódolos elementos que valen 5 e 7. Mostrar a
+ * colección antes e despois
+ */
 public class EliminarNumeros {
     public static void main(String[] args) {
 
