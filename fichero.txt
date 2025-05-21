@@ -1,2 +1,0 @@
-Este es un ejemplo de uso de FileWriter en java
-Este es un ejemplo de uso de FileWriter en java
