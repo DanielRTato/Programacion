@@ -1,8 +1,5 @@
-package DanielRodriguezTatoPro.Ej2;
+package mioExamen.Ej1;
 
-import mioExamen.Ej1.Contacto;
-
-import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -11,10 +8,9 @@ import java.util.stream.Collectors;
 public class Agenda {
     private static List<Contacto> contactos = new ArrayList<>();
     private static final Scanner teclado = new Scanner(System.in);
-    private static final String Archivo = "Contactos.txt";
+
 
     public static void main(String[] args) {
-        cargarContactos();
 
         while (true) {
             System.out.println("Elige una de estas opciones (1 al 5)");
@@ -25,7 +21,7 @@ public class Agenda {
             System.out.println("5. Salir");
             System.out.print("Seleccione unha opción: ");
 
-            try {
+
                 int opcion = Integer.parseInt(teclado.nextLine());
 
                 switch (opcion) {
@@ -42,20 +38,17 @@ public class Agenda {
                         mostrarContactos();
                         break;
                     case 5:
-                        gardarInformacion();
-                        System.out.println("Gardando datos e saíndo do sistema...");
+                        System.out.println("Saliendo de la aplicacion...");
                         teclado.close();
                         return;
                     default:
-                        System.out.println("Opción non válida. Intente novamente.");
+                        System.out.println("No es valida.");
                 }
-            } catch (NumberFormatException e) {
-                System.out.println("Error: Debe ingresar un número válido.");
-            } catch (Exception e) {
-                System.out.println("Error: " + e.getMessage());
+
+
             }
         }
-    }
+
 
     private static void añadirContacto() {
         try {
@@ -87,9 +80,6 @@ public class Agenda {
         }
 
     }
-
-
-
 
     private static void eliminarContacto() {
         if (contactos.isEmpty()) {
@@ -134,30 +124,7 @@ public class Agenda {
     }
 
 
-    private static void gardarInformacion() {
-        try (ObjectOutputStream oos = new ObjectOutputStream(
-                new FileOutputStream(Archivo))) {
-            oos.writeObject(contactos);
-            System.out.println("Contactos guardados en " + Archivo);
-        } catch (IOException e) {
-            System.out.println("Error al guardar el archivo: " + e.getMessage());
-        }
-    }
 
-    private static void cargarContactos() {
-        File arquivo = new File(Archivo);
-        if (!arquivo.exists()) {
-            System.out.println("Non se encontró el archivo o no existe.");
-            return;
-        }
-        try (ObjectInputStream ois = new ObjectInputStream(
-                new FileInputStream(Archivo))) {
-            contactos = (List<Contacto>) ois.readObject();
 
-        } catch (IOException e) {
-            System.out.println("Error al leer el archivo: " + e.getMessage());
-        } catch (ClassNotFoundException e) {
-            System.out.println("Error: No existe el archivo o");
-        }
-    }
+
 }

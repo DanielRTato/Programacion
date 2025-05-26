@@ -1,6 +1,4 @@
-package DanielRodriguezTatoPro.Ej2;
-
-import mioExamen.Ej1.Contacto;
+package mioExamen.Ej2;
 
 import java.io.*;
 import java.util.ArrayList;
