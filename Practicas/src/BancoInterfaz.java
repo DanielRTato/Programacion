@@ -10,7 +10,7 @@ public class BancoInterfaz {
 
         JFrame frame = new JFrame("Programa Bancario");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 300);
+        frame.setSize(800, 600);
         frame.setLayout(new GridLayout(5, 1));
 
         balanceLabel = new JLabel("Balance actual: $" + cuenta.getBalance(), SwingConstants.CENTER);
