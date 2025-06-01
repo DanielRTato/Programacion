@@ -22,6 +22,8 @@ public class Cuenta {
     }
 
     public void retirar(double cantidad) {
+        // TODO: Verificar que el balance es suficiente antes de realizar el retiro
+
         if (cantidad > 0) {
             balance -= cantidad;
         } else {
