@@ -36,7 +36,7 @@ public class Main {
         }
     }
 
-    // Método estático para inserir novo académico
+    // Metodo estático para inserir novo académico
     public static boolean nuevoAcademico(Map<Character, Academico> academia, Academico novo, Character letra) {
         if (!Character.isLetter(letra)) {
             System.out.println("❌ '" + letra + "' non é unha letra válida.");

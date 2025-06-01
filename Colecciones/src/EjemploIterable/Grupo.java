@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- * Configurar el método next() para que deveulva alumnos que tengan NIA
+ * Configurar el metodo next() para que deveulva alumnos que tengan NIA
  *
  */
 public class Grupo implements Iterable <Alumno>{

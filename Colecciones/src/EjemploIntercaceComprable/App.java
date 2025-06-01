@@ -16,12 +16,12 @@ public class App {
         alumnoss.add(new Alumno("Elena", "77777G", 21));
 
 
-        Collections.sort(alumnoss); /// Ordena en base al método compareTo de la clase Alumno
+        Collections.sort(alumnoss); /// Ordena en base al metodo compareTo de la clase Alumno
         System.out.println(alumnoss); // Entonces los muestra ordenados por edad
 
         alumnoss.add(new Alumno("Alex", "888888Z",18));
 
-        Collections.sort(alumnoss); /// Ordena en base al método compareTo de la clase Alumno
+        Collections.sort(alumnoss); /// Ordena en base al metodo compareTo de la clase Alumno
         System.out.println(alumnoss);
 
         Collections.sort(alumnoss);

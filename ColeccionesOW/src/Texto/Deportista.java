@@ -11,12 +11,12 @@ public class Deportista {
         this.licencia = licencia;
     }
 
-    // Método para convertir a formato texto (para guardar en archivo)
+    // Metodo para convertir a formato texto (para guardar en archivo)
     public String toTexto() {
         return dni + ";" + nombre + ";" + licencia;
     }
 
-    // Método para mostrar en pantalla
+    // Metodo para mostrar en pantalla
     @Override
     public String toString() {
         return "DNI: " + dni + " | Nombre: " + nombre + " | Licencia: " + licencia;

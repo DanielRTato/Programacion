@@ -3,7 +3,7 @@ package Ejercicios;
 import java.io.File;
 
 /**
- * Método que recibe una carpeta y lista los archivo con extensión .txt (crea sobrecarga para que el método
+ * Metodo que recibe una carpeta y lista los archivo con extensión .txt (crea sobrecarga para que el metodo
  * reciba el tipo de archivo a listar
  */
 public class contenidoCarpeta {

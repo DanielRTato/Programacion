@@ -3,7 +3,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Ej8 {
-    // Método xenérico para a intersección de dous conxuntos
+    // Metodo xenérico para a intersección de dous conxuntos
     public static <E> Set<E> interseccion(Set<E> conxunto1, Set<E> conxunto2) {
         Set<E> resultado = new HashSet<>(conxunto1); // Copiamos o primeiro conxunto
         resultado.retainAll(conxunto2); // Conservamos só os elementos que tamén están no segundo

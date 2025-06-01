@@ -5,7 +5,7 @@ import java.util.Set;
 public class Ej7 {
     public class Conxuntos {
 
-        // Método estático xenérico que fai a unión de dous conxuntos
+        // Metodo estático xenérico que fai a unión de dous conxuntos
         public static <E> Set<E> union(Set<E> conxunto1, Set<E> conxunto2) {
             Set<E> resultado = new HashSet<>(conxunto1); // Copiamos o primeiro conxunto
             resultado.addAll(conxunto2); // Engadimos todos os elementos do segundo

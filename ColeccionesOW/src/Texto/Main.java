@@ -90,7 +90,7 @@ public class Main {
     private static void guardarDeportistas() {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(ARCHIVO))) {
             for (Deportista d : deportistas) {
-                bw.write(d.toTexto()); // Método que genera la línea de texto
+                bw.write(d.toTexto()); // Metodo que genera la línea de texto
                 bw.newLine();
             }
             System.out.println("Datos guardados en " + ARCHIVO);
