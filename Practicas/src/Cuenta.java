@@ -7,8 +7,11 @@ public class Cuenta {
     }
 
     public  void mostrarBalance() {
-        System.out.println("Tu balance actual es: " + getBalance());
+        System.out.println("--------------------");
+        System.out.printf("Tu balance actual es: $%.2f%n", balance);
+        System.out.println("--------------------");
     }
+
 
     public void depositar (double cantidad) {
         if (cantidad > 0 ) {
